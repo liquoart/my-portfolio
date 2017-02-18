@@ -4,13 +4,22 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Aakaash</title>
+	<title>Liquoart: Graphic Design</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen backgrounds." />
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
 	<meta name="Resource-type" content="Document" />
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	<script type="text/javascript">
+		(function titleScroller(text) {
+		    document.title = text;
+		    setTimeout(function () {
+			titleScroller(text.substr(1) + text.substr(0, 1));
+		    }, 500);
+		}(" Liquoart: Graphic Design "));
+	</script>
 	
 	<style>
 	*{margin: 0; padding: 0;}
